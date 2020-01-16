@@ -270,4 +270,13 @@ switch (year) {
 }
 document.getElementById("ELEMENT").innerHTML = elementtext;
 document.getElementById("ANIMAL").innerHTML = animaltext;
+
+var testText;
+if ( elementtext === "WATER" && animaltext === "Year of the Pig") {
+  testText = "YUP";
+} else { testText="NOPE";
+}
+
+document.getElementById("Result").innerHTML = testText;
+
 }
