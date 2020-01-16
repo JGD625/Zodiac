@@ -269,5 +269,5 @@ switch (year) {
     break;
 }
 document.getElementById("ELEMENT").innerHTML = elementtext;
-document.getElementById("demo").innerHTML = animaltext;
+document.getElementById("ANIMAL").innerHTML = animaltext;
 }
