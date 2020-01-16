@@ -173,6 +173,8 @@ switch (year) {
   case "1985":
   case "1994":
   case "1995":
+  case "2004":
+  case "2005":
   case "2014":
   case "2015":
     elementtext = "WOOD";
@@ -268,9 +270,27 @@ switch (year) {
   case "2023":
     elementtext = "WATER";
     break;
-}
+};
 document.getElementById("ELEMENT").innerHTML = elementtext;
 document.getElementById("ANIMAL").innerHTML = animaltext;
+
+//ELEMENT IN KANJI
+var kanji;
+if ( elementtext === "WOOD") {
+  kanji = "木";
+} else if ( elementtext === "FIRE") {
+  kanji = "火";
+} else if ( elementtext === "EARTH") {
+  kanji = "土";
+} else if ( elementtext === "METAL") {
+  kanji = "金";
+} else if ( elementtext === "WATER") {
+  kanji = "水";
+} else { kanji = "";
+};
+
+document.getElementById("KANJI").innerHTML = kanji;
+
 
 //SIGN & ELEMENT ALIGNMENT
 var resultText;
@@ -365,7 +385,7 @@ if ( elementtext === "WOOD" && animaltext === "Year of the Rat") {
 } else if ( elementtext === "WOOD" && animaltext === "Year of the Monkey") {
   resultText = "Wood Monkeys: Lively, Compassionate (1944, 2004)";
 } else if ( elementtext === "FIRE" && animaltext === "Year of the Monkey") {
-  resultText = "The Characters of Fire Monkeys: Ambitious, Adventurous (1956, 2016)";
+  resultText = "Fire Monkeys: Ambitious, Adventurous (1956, 2016)";
 } else if ( elementtext === "EARTH" && animaltext === "Year of the Monkey") {
   resultText = "Earth Monkeys: Optimistic, Fearless (1908, 1968)";
 } else if ( elementtext === "METAL" && animaltext === "Year of the Monkey") {
@@ -406,7 +426,8 @@ if ( elementtext === "WOOD" && animaltext === "Year of the Rat") {
 } else if ( elementtext === "WATER" && animaltext === "Year of the Pig") {
   resultText = "Water Pigs: Subjective, Earnest (1923, 1983)";
 } else { resultText="";
-}
+};
+
 document.getElementById("Result").innerHTML = resultText;
 
 }
