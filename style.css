@@ -41,6 +41,8 @@ h1 {
   text-align: center;
 }
 
+
+
 select {
   width: 100%;
   height: 60px;
@@ -106,7 +108,9 @@ legend {
 
 #ELEMENT {
   font-size: 1.6em;
+  font-family: 'Cinzel Decorative', cursive;
 }
+
 
 #ANIMAL {
   font-size: 2em;
@@ -140,13 +144,12 @@ legend {
 
 .bottom_row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -177,6 +180,10 @@ legend {
 .middle_row {
   margin-top: 30px;
   width: 90%;
+}
+
+h1 {
+  font-size: 2.2em;
 }
 
 }

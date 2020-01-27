@@ -292,6 +292,7 @@ if ( elementtext === "WOOD") {
 };
 document.getElementById("KANJI").innerHTML = kanji;
 
+//ANIMAL KANJI
 var animalKanji;
 if (animaltext === "Year of the Rat") {
   animalKanji = "鼠";
@@ -459,4 +460,93 @@ if ( elementtext === "WOOD" && animaltext === "Year of the Rat") {
 };
 
 document.getElementById("Result").innerHTML = resultText;
+//ABOUT
+var aboutText;
+switch(animaltext) {
+  case "Year of the Rat":
+    aboutText = "Rats are clever, quick thinkers; successful, but content with living a quiet and peaceful life. Optimistic and energetic, people born in the Rat year are likable by all.<br><br>Men born in the Rat year are clever and adapt quickly to new environments.<br>Women born in the Rat year are very traditional.<br><br>The Rat is also associated with the Earthly Branch (地支—dì zhī) Zi (子) and the midnight hours. In the terms of yin and yang (阴阳—yīn yáng), the Rat is yang and represents the beginning of a new day."
+    break;
+  case "Year of the Horse":
+    aboutText = "Horses are free spirits who need space to be themselves. Horses are full of energy, and are strong believers of chasing after dreams.<br><br>Men born in the Horse year are independent and crave freedom.<br>Women born in the Horse year are beautiful and impressive.<br><br>The Horse is also associated with the Earthly Branch (地支—dì zhī) wǔ (午), and the hours 11–13 at midday. In the terms of yin and yang (阴阳—yīn yáng), the Horse is yang."
+    break; 
+  case "Year of the Goat":
+    aboutText = "Goats are loving and selfless, always thinking for others, even if it works against their own interest. No matter what, they put others’ needs above their own. However, their inner stubbornness sometimes makes communication difficult.<br><br>Men born in the Goat year are true gentlemen.<br>Women born in the Goat year are reliable and attentive.<br><br>The Goat is also associated with the Earthly Branch (地支—dì zhī) wèi (未) and the hours 1–3 in the afternoon. In the terms of yin and yang (阴阳—yīn yáng), the Goat is yin."
+    break; 
+  case "Year of the Pig":
+    aboutText = "Pigs have a beautiful personality and are blessed with good fortune in life. They love entertainment and will occasionally treat themselves, but are very realistic.<br><br>Men born in the Pig year are optimistic and gentle.<br>Women born in the Pig year are full of excitement. <br><br>The Pig is also associated with the Earthly Branch (地支—dì zhī) hài (亥), and the hours 9–11 in the night. In terms of yin and yang (阴阳—yīn yáng), the Pig is yin. In Chinese culture, pigs are the symbol of wealth."
+    break; 
+  case "Year of the Snake":
+    aboutText = "Snakes have a deep and complex mind, but if they love, they love with their entire heart. Snakes are humorous and sophisticated, however they may become jealous easily and often distrust others.<br><br>Men born in the Snake year are mysterious and experienced.<br>Women born in the Snake year are graceful and elegant.<br><br>The Snake is also associated with the Earthly Branch (地支—dì zhī) sì (巳), and the hours 9–11 in the morning. In the terms of yin and yang (阴阳—yīn yáng), the Snake is yin."
+    break; 
+  case "Year of the Tiger":
+    aboutText = "Tigers are courageous and active people who love a good challenge and adventure in life. Tigers are kind and benevolent. Sometimes they make brash decisions and are hard to control.<br><br>Men born in the Tiger year have adventurous spirits.<br>Women born in the Tiger year are mesmerizing and expressive.<br><br>The Tiger is also associated with the Earthly Branch (地支—dì zhī) yín (寅) and the hours 3–5 in the morning. In the terms of yin and yang (阴阳—yīn yáng), the Tiger is yang."
+    break; 
+  case "Year of the Monkey":
+    aboutText = "Monkeys are lighthearted pranksters who have the ability to achieve all their dreams. Monkeys are always able to triumph and be the final winner. However, they can be arrogant and quick to jealousy.<br><br>Men born in the Monkey year are enthusiastic and responsible. <br>Women born in the Monkey year are social and connect with others easily.<br><br>The Monkey is also associated with the Earthly Branch (地支—dì zhī) shēn (申), and the hours 3–5 in the afternoon. In the terms of yin and yang (阴阳—yīn yáng), the Monkey is yang."
+    break; 
+  case "Year of the Dragon":
+    aboutText = "Dragons are strong and independent, but they yearn for support and love. They value respect and may be aloof. They do not waste money or time.<br><br>Men born in the Dragon year are steadfast in their beliefs.<br>Women born in the Dragon year are mesmerizing and strong.<br><br>The Dragon is also associated with the Earthly Branch (地支—dì zhī) chén (辰) and the hours 7–9 in the morning. In the terms of yin and yang (阴阳—yīn yáng), the Dragon is yang."
+    break; 
+  case "Year of the Rooster":
+    aboutText = "Roosters are complex people who seem strong but, deep down, need validation from loved ones. Roosters are serious in their work, straightforward and decisive in their actions.<br><br>Men born in the Rooster year are always changing, sometimes joyous, sometimes emotional.<br>Women born in the Rooster year are caring and very down to earth.<br><br>The Rooster is also associated with the Earthly Branch (地支—dì zhī) yǒu (酉), and the hours 5–7 in the afternoon. In the terms of yin and yang (阴阳—yīn yáng), the Rooster is yin."
+    break; 
+  case "Year of the Rabbit":
+    aboutText = "Rabbits are earnest with everything they do; they just ask that others treat them the same way.Though quiet, they are far from weak. With their good reasoning skills and attention to detail, they make great scholars.<br><br>Men born in the Rabbit year are extraordinarily polite.<br>Women born in the Rabbit year love being social, but always mind their manners. <br><br>The Rabbit is also associated with the Earthly Branch (地支—dì zhī) mǎo (卯) and the hours 5—7 in the morning. In the terms of yin and yang (阴阳—yīn yáng), the Rabbit is yin."
+    break; 
+  case "Year of the Dog":
+    aboutText = "Honest and loyal, Dogs are the truest friends and most reliable partner.A Dog’s most defining characteristic is their loyalty. They will never abandon their friends, family or work, making them popular in social circles.<br><br>Men born in the Dog year are straightforward and genuine.<br>Women born in the Dog year are very cautious. <br><br>The Dog is also associated with the Earthly Branch (地支—dì zhī) xū (戌), and the hours 7–9 in the evening. In the terms of yin and yang (阴阳—yīn yáng), the Dog is yang."
+    break; 
+  case "Year of the Ox":
+    aboutText = "Oxen are the hard workers, intelligent and reliable, but never demanding praise. They make excellent leaders, though they may be stubborn. <br><br>Men born in the Ox year are reliable and trustworthy.<br>Women born in the Ox year are calm and gentle.<br><br>The Ox is also associated with the Earthly Branch (地支—dì zhī) Chǒu (丑) and the hours 1–3 in the morning. In the terms of yin and yang (阴阳—yīn yáng), the Ox is Yang."
+    break; 
+  default:
+  aboutText = "";
+}
+
+document.getElementById("ABOUT").innerHTML = aboutText;
+
+//COMPATIBILITY
+var compatText
+switch(animaltext) {
+  case "Year of the Rat":
+    compatText = "Most compatible with: Ox, Dragon, Monkey<br>Least compatible with: Horse, Goat and Rabbit"
+    break;
+  case "Year of the Horse":
+    compatText = "Most compatible with: Goat, Tiger, Dog<br>Least compatible with: Rat, Ox, Horse"
+    break; 
+  case "Year of the Goat":
+    compatText = "Most compatible with: Horse, Pig, Rabbit<br>Least compatible with: Ox, Rat, Dog"
+    break; 
+  case "Year of the Pig":
+    compatText = "Most compatible with: Tiger, Rabbit, Goat<br>Least compatible with: Snake, Monkey"
+    break; 
+  case "Year of the Snake":
+    compatText = "Most compatible with: Monkey, Rooster, Ox<br>Least compatible with: Tiger, Pig"
+    break; 
+  case "Year of the Tiger":
+    compatText = "Most compatible with: Pig, Horse, Dog<br>Least compatible with: Monkey, Snake"
+    break; 
+  case "Year of the Monkey":
+    compatText = "Most compatible with: Snake, Rat, Dragon<br>Least compatible with: Tiger, Pig"
+    break; 
+  case "Year of the Dragon":
+    compatText = "Most compatible with: Rooster, Monkey, Rat<br>Least compatible with: Dog, Rabbit, Dragon"
+    break; 
+  case "Year of the Rooster":
+    compatText = "Most compatible with: Dragon, Snake, Ox<br>Least compatible with: Rabbit, Dog, Rooster"
+    break; 
+  case "Year of the Rabbit":
+    compatText = "Most compatible with: Dog, Pig, Goat<br>Least compatible with: Rooster, Dragon, Rat"
+    break; 
+  case "Year of the Dog":
+    compatText = "Most compatible with: Rabbit, Tiger, Horse<br>Least compatible with: Dragon, Ox, Goat"
+    break; 
+  case "Year of the Ox":
+    compatText = "Most compatible with: Rat, Snake, Rooster<br>Least compatible with: Goat, Horse, Dog"
+    break; 
+  default:
+  compatText = "";
+}
+
+document.getElementById("COMPAT").innerHTML = compatText;
 }
