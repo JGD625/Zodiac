@@ -8,14 +8,23 @@ font-family: 'Noto Sans TC', sans-serif;
 body, html {
     width:100%;
     height: 100%;
+    overflow: scroll;
     background-image: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 100%;
+    margin: 0;
+    padding: 0;
+
 }
+
+
 
 header {
   height: 150px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header_container {
@@ -41,6 +50,8 @@ select {
   overflow: auto;
   font-family: 'Raleway', sans-serif;
   font-size: 1.8em;
+  text-align: center;
+  background-color: #F4ECF7;
 }
 
 button {
@@ -53,6 +64,11 @@ button {
   margin-top: 10px;
   font-family: 'Raleway', sans-serif;
   font-size: 1.2em;
+  background-color: #F4ECF7 ;
+}
+
+button:hover {
+background-color:#fff;
 }
 
 .moon {
@@ -67,12 +83,20 @@ button {
         0 0 140px 40px #0ff; /* outer cyan */
 }
 
+
+
 #year_form {
   width: 200px;
-  height: 300px;
+  height: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+legend {
+  margin: 5px;
 }
 
 #KANJI {
@@ -122,4 +146,37 @@ button {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+ .moon {
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 
+        0 0 60px 10px #fff,  /* inner white */
+        0 0 80px 20px #f0f, /* middle magenta */
+        0 0 140px 40px #0ff; /* outer cyan */
+}
+.top_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  text-align: center;
+}
+#ANIMALKANJI {
+  font-size: 2.5em;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.middle_row {
+  margin-top: 30px;
+  width: 90%;
+}
+
 }
