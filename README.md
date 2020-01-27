@@ -1,12 +1,13 @@
-# ZODIAC: Switch Case Practice
+# ZODIAC: Switch Case & If/Else Practice
 
-:WORK IN PROGRESS/UNSTYLED:
+DEMO: https://jgd625.github.io/Zodiac/
+
+
+A simple web-app written with plain JavaScript, HTML, and CSS, with the goal of practicing if/else & switch case logic.  User inputs the year of their birth, and is given their Lunar Zodiac results.
+
 
 # TECH: 
 HTML/CSS/JavaScript
 
-#GOAL:
 
- I want to play more with switch case scenarios.  This is a self assigned project. 
- Based on used input, determine Zodiac information. 
 
