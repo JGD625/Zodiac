@@ -76,8 +76,12 @@ button {
 }
 
 #KANJI {
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: 'Noto Sans TC', sans-serif;
+}
+
+#ELEMENT {
+  font-size: 1.6em;
 }
 
 #ANIMAL {
