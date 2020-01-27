@@ -19,7 +19,7 @@
     </header>
     <main>
       
-    <form>
+    <form id="year_form">
   Select your birth year:<br>
 
 
@@ -127,13 +127,20 @@ onchange='this.size=1; this.blur();'>
     <option value="1921">1921</option>
     <option value="1920">1920</option>
   </select>
-  
+  <button type="button" onclick="whatYear()">Try it</button>
 </form>
-<button type="button" onclick="whatYear()">Try it</button>
-    <p id="ANIMAL"></p>
-    <p id="ELEMENT"></p>
+<div class="top_row">
+    <h2 id="ANIMAL"></h2>
+    <span id="ANIMALKANJI"></span>
+    </div>
+  <div class="middle_row">
+    <span id="ELEMENT"></span>
+    <span id="KANJI"></span>
+    </div>
+  <div class="bottom_row">
     <p id="Result"></p>
-    <p id="KANJI"></p>
+  </div>
+    
     </main>
     <footer>
     </footer>

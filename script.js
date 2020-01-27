@@ -271,8 +271,10 @@ switch (year) {
     elementtext = "WATER";
     break;
 };
-document.getElementById("ELEMENT").innerHTML = elementtext;
+
 document.getElementById("ANIMAL").innerHTML = animaltext;
+document.getElementById("ELEMENT").innerHTML = elementtext;
+
 
 //ELEMENT IN KANJI
 var kanji;
@@ -288,8 +290,36 @@ if ( elementtext === "WOOD") {
   kanji = "水";
 } else { kanji = "";
 };
-
 document.getElementById("KANJI").innerHTML = kanji;
+
+var animalKanji;
+if (animaltext === "Year of the Rat") {
+  animalKanji = "鼠";
+} else if (animaltext === "Year of the Rabbit") {
+  animalKanji = "兔";
+} else if (animaltext === "Year of the Horse") {
+  animalKanji = "⾺";
+} else if (animaltext === "Year of the Dog") {
+  animalKanji = "狗";
+} else if (animaltext === "Year of the Tiger") {
+  animalKanji = "寅";
+} else if (animaltext === "Year of the Goat") {
+  animalKanji = "羊";
+} else if (animaltext === "Year of the Pig") {
+  animalKanji = "豬";
+} else if (animaltext === "Year of the Snake") {
+  animalKanji = "蛇";
+} else if (animaltext === "Year of the Ox") {
+  animalKanji = "牛";
+} else if (animaltext === "Year of the Rooster") {
+  animalKanji = "鷄";
+} else if (animaltext === "Year of the Dragon") {
+  animalKanji = "龍";
+} else if (animaltext === "Year of the Monkey") {
+  animalKanji = "猴";
+} else { animalKanji = "";
+};
+document.getElementById("ANIMALKANJI").innerHTML = animalKanji;
 
 
 //SIGN & ELEMENT ALIGNMENT
@@ -429,5 +459,4 @@ if ( elementtext === "WOOD" && animaltext === "Year of the Rat") {
 };
 
 document.getElementById("Result").innerHTML = resultText;
-
 }
